@@ -19,7 +19,7 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
         path_to_yaml (str): path like imput
 
     Raises:
-        ValueError: if ymal file is empty
+        ValueError: if yaml file is empty
         e: empty file
 
     Returns:
