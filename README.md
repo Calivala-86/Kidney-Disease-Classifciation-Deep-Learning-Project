@@ -2,7 +2,7 @@
 
 
 ```
-# How to run?
+How to run?
 ```
 ### STEPS:
 
