@@ -394,3 +394,340 @@ x==========x]
 [2025-01-06 03:16:16,634: INFO: common: json file saved at scores.json]
 [2025-01-06 03:16:22,053: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
 [2025-01-06 03:16:24,149: INFO: builder_impl: Assets written to: /var/folders/ks/5nym8j9d5_l_9fp2yb3p9q3c0000gn/T/tmpava_jfk3/model/data/model/assets]
+[2025-01-06 20:43:29,523: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 20:43:29,636: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 20:43:29,649: INFO: common: created directory at: artifacts]
+[2025-01-06 20:45:07,061: INFO: common: json file saved at scores.json]
+[2025-01-06 20:45:13,198: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-01-06 20:45:15,321: INFO: builder_impl: Assets written to: /var/folders/ks/5nym8j9d5_l_9fp2yb3p9q3c0000gn/T/tmpv5mt9_fk/model/data/model/assets]
+[2025-01-06 20:46:56,721: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 20:46:56,737: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 20:46:56,743: INFO: common: created directory at: artifacts]
+[2025-01-06 20:48:33,096: INFO: common: json file saved at scores.json]
+[2025-01-06 20:48:39,273: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-01-06 20:48:41,300: INFO: builder_impl: Assets written to: /var/folders/ks/5nym8j9d5_l_9fp2yb3p9q3c0000gn/T/tmpp_hd5exk/model/data/model/assets]
+[2025-01-06 21:52:41,995: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2025-01-06 21:52:42,002: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 21:52:42,014: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 21:52:42,020: INFO: common: created directory at: artifacts]
+[2025-01-06 21:52:42,021: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-06 21:52:42,021: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-06 21:52:49,213: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-06 21:52:50,367: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-01-06 21:52:50,368: INFO: main: *******************]
+[2025-01-06 21:52:50,368: INFO: main: >>>>>>> stage Prepare base model started <<<<<<<]
+[2025-01-06 21:52:50,382: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 21:52:50,386: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 21:52:50,387: INFO: common: created directory at: artifacts]
+[2025-01-06 21:52:50,387: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-01-06 21:52:51,955: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-01-06 21:52:53,549: INFO: main: >>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-01-06 21:52:53,550: INFO: main: *******************]
+[2025-01-06 21:52:53,550: INFO: main: >>>>>>> stage Training started <<<<<<<]
+[2025-01-06 21:52:53,555: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 21:52:53,558: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 21:52:53,559: INFO: common: created directory at: artifacts]
+[2025-01-06 21:52:53,560: INFO: common: created directory at: artifacts/training]
+[2025-01-06 21:56:23,905: INFO: main: >>>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-01-06 21:56:23,920: INFO: main: *******************]
+[2025-01-06 21:56:23,920: INFO: main: >>>>>>> stage Evaluation stage started <<<<<<<]
+[2025-01-06 21:56:23,936: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 21:56:23,947: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 21:56:23,954: INFO: common: created directory at: artifacts]
+[2025-01-06 21:57:26,950: INFO: common: json file saved at scores.json]
+[2025-01-06 21:57:26,955: INFO: common: json file saved at scores.json]
+[2025-01-06 21:57:31,049: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-01-06 21:57:32,364: INFO: builder_impl: Assets written to: /var/folders/ks/5nym8j9d5_l_9fp2yb3p9q3c0000gn/T/tmpye6e5rim/model/data/model/assets]
+[2025-01-06 21:57:59,862: ERROR: main: No module named 'distutils._modified']
+Traceback (most recent call last):
+  File "main.py", line 53, in <module>
+    model_evaluation.main()
+  File "/Users/fernandoecumbi/Desktop/IT course/Kidney-Disease-Classifciation-Deep-Learning-Project/src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "/Users/fernandoecumbi/Desktop/IT course/Kidney-Disease-Classifciation-Deep-Learning-Project/src/cnnClassifier/components/model_evaluation_mlflow.py", line 69, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model")
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tensorflow/__init__.py", line 222, in log_model
+    return Model.log(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/models/model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tracking/fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tracking/client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tracking/_tracking_service/client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/store/artifact/local_artifact_repo.py", line 58, in log_artifacts
+    dir_util.copy_tree(src=local_dir, dst=artifact_dir, preserve_mode=0, preserve_times=0)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/setuptools/_distutils/dir_util.py", line 155, in copy_tree
+    return list(itertools.chain.from_iterable(map(copy_one, names)))
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/setuptools/_distutils/dir_util.py", line 197, in _copy_one
+    file_util.copy_file(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/setuptools/_distutils/file_util.py", line 104, in copy_file
+    from distutils._modified import newer
+ModuleNotFoundError: No module named 'distutils._modified'
+[2025-01-06 22:06:28,997: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2025-01-06 22:06:29,002: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 22:06:29,011: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 22:06:29,017: INFO: common: created directory at: artifacts]
+[2025-01-06 22:06:29,017: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-06 22:06:29,017: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-06 22:06:36,472: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-06 22:06:37,443: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-01-06 22:06:37,443: INFO: main: *******************]
+[2025-01-06 22:06:37,443: INFO: main: >>>>>>> stage Prepare base model started <<<<<<<]
+[2025-01-06 22:06:37,448: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 22:06:37,451: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 22:06:37,452: INFO: common: created directory at: artifacts]
+[2025-01-06 22:06:37,452: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-01-06 22:06:38,896: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-01-06 22:06:40,295: INFO: main: >>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-01-06 22:06:40,296: INFO: main: *******************]
+[2025-01-06 22:06:40,296: INFO: main: >>>>>>> stage Training started <<<<<<<]
+[2025-01-06 22:06:40,305: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 22:06:40,311: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 22:06:40,312: INFO: common: created directory at: artifacts]
+[2025-01-06 22:06:40,313: INFO: common: created directory at: artifacts/training]
+[2025-01-06 22:10:04,703: INFO: main: >>>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-01-06 22:10:04,709: INFO: main: *******************]
+[2025-01-06 22:10:04,709: INFO: main: >>>>>>> stage Evaluation stage started <<<<<<<]
+[2025-01-06 22:10:04,723: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 22:10:04,733: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 22:10:04,740: INFO: common: created directory at: artifacts]
+[2025-01-06 22:10:55,363: INFO: common: json file saved at scores.json]
+[2025-01-06 22:10:55,367: INFO: common: json file saved at scores.json]
+[2025-01-06 22:10:59,571: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-01-06 22:11:00,888: INFO: builder_impl: Assets written to: /var/folders/ks/5nym8j9d5_l_9fp2yb3p9q3c0000gn/T/tmpai1fi3bw/model/data/model/assets]
+[2025-01-06 22:11:29,235: ERROR: main: No module named 'distutils._modified']
+Traceback (most recent call last):
+  File "main.py", line 53, in <module>
+    model_evaluation.main()
+  File "/Users/fernandoecumbi/Desktop/IT course/Kidney-Disease-Classifciation-Deep-Learning-Project/src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "/Users/fernandoecumbi/Desktop/IT course/Kidney-Disease-Classifciation-Deep-Learning-Project/src/cnnClassifier/components/model_evaluation_mlflow.py", line 69, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model")
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tensorflow/__init__.py", line 222, in log_model
+    return Model.log(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/models/model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tracking/fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tracking/client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tracking/_tracking_service/client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/store/artifact/local_artifact_repo.py", line 58, in log_artifacts
+    dir_util.copy_tree(src=local_dir, dst=artifact_dir, preserve_mode=0, preserve_times=0)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/setuptools/_distutils/dir_util.py", line 155, in copy_tree
+    return list(itertools.chain.from_iterable(map(copy_one, names)))
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/setuptools/_distutils/dir_util.py", line 197, in _copy_one
+    file_util.copy_file(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/setuptools/_distutils/file_util.py", line 104, in copy_file
+    from distutils._modified import newer
+ModuleNotFoundError: No module named 'distutils._modified'
+[2025-01-06 22:23:14,954: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2025-01-06 22:23:14,960: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 22:23:14,974: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 22:23:14,980: INFO: common: created directory at: artifacts]
+[2025-01-06 22:23:14,981: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-06 22:23:14,981: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-06 22:23:22,161: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-06 22:23:23,824: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-01-06 22:23:23,824: INFO: main: *******************]
+[2025-01-06 22:23:23,824: INFO: main: >>>>>>> stage Prepare base model started <<<<<<<]
+[2025-01-06 22:23:23,832: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 22:23:23,836: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 22:23:23,836: INFO: common: created directory at: artifacts]
+[2025-01-06 22:23:23,836: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-01-06 22:23:25,519: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-01-06 22:23:26,553: INFO: main: >>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-01-06 22:23:26,553: INFO: main: *******************]
+[2025-01-06 22:23:26,553: INFO: main: >>>>>>> stage Training started <<<<<<<]
+[2025-01-06 22:23:26,560: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 22:23:26,563: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 22:23:26,564: INFO: common: created directory at: artifacts]
+[2025-01-06 22:23:26,564: INFO: common: created directory at: artifacts/training]
+[2025-01-06 22:26:31,512: INFO: main: >>>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-01-06 22:26:31,522: INFO: main: *******************]
+[2025-01-06 22:26:31,523: INFO: main: >>>>>>> stage Evaluation stage started <<<<<<<]
+[2025-01-06 22:26:31,536: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 22:26:31,546: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 22:26:31,554: INFO: common: created directory at: artifacts]
+[2025-01-06 22:27:23,152: INFO: common: json file saved at scores.json]
+[2025-01-06 22:27:23,155: INFO: common: json file saved at scores.json]
+[2025-01-06 22:27:27,414: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-01-06 22:27:28,620: INFO: builder_impl: Assets written to: /var/folders/ks/5nym8j9d5_l_9fp2yb3p9q3c0000gn/T/tmp1kuiu_3w/model/data/model/assets]
+[2025-01-06 22:27:56,837: ERROR: main: No module named 'distutils._modified']
+Traceback (most recent call last):
+  File "main.py", line 53, in <module>
+    model_evaluation.main()
+  File "/Users/fernandoecumbi/Desktop/IT course/Kidney-Disease-Classifciation-Deep-Learning-Project/src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "/Users/fernandoecumbi/Desktop/IT course/Kidney-Disease-Classifciation-Deep-Learning-Project/src/cnnClassifier/components/model_evaluation_mlflow.py", line 69, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model")
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tensorflow/__init__.py", line 222, in log_model
+    return Model.log(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/models/model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tracking/fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tracking/client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tracking/_tracking_service/client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/store/artifact/local_artifact_repo.py", line 58, in log_artifacts
+    dir_util.copy_tree(src=local_dir, dst=artifact_dir, preserve_mode=0, preserve_times=0)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/setuptools/_distutils/dir_util.py", line 155, in copy_tree
+    return list(itertools.chain.from_iterable(map(copy_one, names)))
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/setuptools/_distutils/dir_util.py", line 197, in _copy_one
+    file_util.copy_file(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/setuptools/_distutils/file_util.py", line 104, in copy_file
+    from distutils._modified import newer
+ModuleNotFoundError: No module named 'distutils._modified'
+[2025-01-06 22:41:46,287: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2025-01-06 22:41:46,293: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 22:41:46,304: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 22:41:46,308: INFO: common: created directory at: artifacts]
+[2025-01-06 22:41:46,308: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-06 22:41:46,309: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-06 22:41:52,504: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-06 22:41:53,727: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-01-06 22:41:53,727: INFO: main: *******************]
+[2025-01-06 22:41:53,727: INFO: main: >>>>>>> stage Prepare base model started <<<<<<<]
+[2025-01-06 22:41:53,731: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 22:41:53,734: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 22:41:53,734: INFO: common: created directory at: artifacts]
+[2025-01-06 22:41:53,735: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-01-06 22:41:55,005: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-01-06 22:41:56,098: INFO: main: >>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-01-06 22:41:56,098: INFO: main: *******************]
+[2025-01-06 22:41:56,099: INFO: main: >>>>>>> stage Training started <<<<<<<]
+[2025-01-06 22:41:56,105: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 22:41:56,109: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 22:41:56,109: INFO: common: created directory at: artifacts]
+[2025-01-06 22:41:56,110: INFO: common: created directory at: artifacts/training]
+[2025-01-06 22:46:01,359: INFO: main: >>>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-01-06 22:46:01,414: INFO: main: *******************]
+[2025-01-06 22:46:01,414: INFO: main: >>>>>>> stage Evaluation stage started <<<<<<<]
+[2025-01-06 22:46:01,476: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 22:46:01,545: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 22:46:01,573: INFO: common: created directory at: artifacts]
+[2025-01-06 22:49:57,538: INFO: common: json file saved at scores.json]
+[2025-01-06 22:49:57,540: INFO: common: json file saved at scores.json]
+[2025-01-06 22:50:10,317: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-01-06 22:50:14,239: INFO: builder_impl: Assets written to: /var/folders/ks/5nym8j9d5_l_9fp2yb3p9q3c0000gn/T/tmp46sw2veb/model/data/model/assets]
+[2025-01-06 22:50:50,619: ERROR: main: No module named 'distutils._modified']
+Traceback (most recent call last):
+  File "main.py", line 53, in <module>
+    model_evalution.main()
+  File "/Users/fernandoecumbi/Desktop/IT course/Kidney-Disease-Classifciation-Deep-Learning-Project/src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "/Users/fernandoecumbi/Desktop/IT course/Kidney-Disease-Classifciation-Deep-Learning-Project/src/cnnClassifier/components/model_evaluation_mlflow.py", line 69, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model")
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tensorflow/__init__.py", line 222, in log_model
+    return Model.log(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/models/model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tracking/fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tracking/client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tracking/_tracking_service/client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/store/artifact/local_artifact_repo.py", line 58, in log_artifacts
+    dir_util.copy_tree(src=local_dir, dst=artifact_dir, preserve_mode=0, preserve_times=0)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/setuptools/_distutils/dir_util.py", line 155, in copy_tree
+    return list(itertools.chain.from_iterable(map(copy_one, names)))
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/setuptools/_distutils/dir_util.py", line 197, in _copy_one
+    file_util.copy_file(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/setuptools/_distutils/file_util.py", line 104, in copy_file
+    from distutils._modified import newer
+ModuleNotFoundError: No module named 'distutils._modified'
+[2025-01-06 22:51:54,932: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2025-01-06 22:51:54,938: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 22:51:54,948: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 22:51:54,951: INFO: common: created directory at: artifacts]
+[2025-01-06 22:51:54,952: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-06 22:51:54,952: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-06 22:52:01,867: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-06 22:52:03,723: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-01-06 22:52:03,723: INFO: main: *******************]
+[2025-01-06 22:52:03,723: INFO: main: >>>>>>> stage Prepare base model started <<<<<<<]
+[2025-01-06 22:52:03,739: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 22:52:03,748: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 22:52:03,748: INFO: common: created directory at: artifacts]
+[2025-01-06 22:52:03,749: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-01-06 22:52:05,408: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-01-06 22:52:09,719: INFO: main: >>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-01-06 22:52:09,819: INFO: main: *******************]
+[2025-01-06 22:52:09,843: INFO: main: >>>>>>> stage Training started <<<<<<<]
+[2025-01-06 22:52:10,102: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 22:52:10,109: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 22:52:10,112: INFO: common: created directory at: artifacts]
+[2025-01-06 22:52:10,113: INFO: common: created directory at: artifacts/training]
+[2025-01-06 22:57:43,731: INFO: main: >>>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-01-06 22:57:43,738: INFO: main: *******************]
+[2025-01-06 22:57:43,739: INFO: main: >>>>>>> stage Evaluation stage started <<<<<<<]
+[2025-01-06 22:57:43,763: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-06 22:57:43,837: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-06 22:57:43,841: INFO: common: created directory at: artifacts]
+[2025-01-06 22:59:06,096: INFO: common: json file saved at scores.json]
+[2025-01-06 22:59:06,102: INFO: common: json file saved at scores.json]
+[2025-01-06 22:59:10,785: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-01-06 22:59:12,446: INFO: builder_impl: Assets written to: /var/folders/ks/5nym8j9d5_l_9fp2yb3p9q3c0000gn/T/tmptshmlzbh/model/data/model/assets]
+[2025-01-06 22:59:38,882: ERROR: main: No module named 'distutils._modified']
+Traceback (most recent call last):
+  File "main.py", line 53, in <module>
+    model_evalution.main()
+  File "/Users/fernandoecumbi/Desktop/IT course/Kidney-Disease-Classifciation-Deep-Learning-Project/src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "/Users/fernandoecumbi/Desktop/IT course/Kidney-Disease-Classifciation-Deep-Learning-Project/src/cnnClassifier/components/model_evaluation_mlflow.py", line 69, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model")
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tensorflow/__init__.py", line 222, in log_model
+    return Model.log(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/models/model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tracking/fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tracking/client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/tracking/_tracking_service/client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/mlflow/store/artifact/local_artifact_repo.py", line 58, in log_artifacts
+    dir_util.copy_tree(src=local_dir, dst=artifact_dir, preserve_mode=0, preserve_times=0)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/setuptools/_distutils/dir_util.py", line 155, in copy_tree
+    return list(itertools.chain.from_iterable(map(copy_one, names)))
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/setuptools/_distutils/dir_util.py", line 197, in _copy_one
+    file_util.copy_file(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/setuptools/_distutils/file_util.py", line 104, in copy_file
+    from distutils._modified import newer
+ModuleNotFoundError: No module named 'distutils._modified'

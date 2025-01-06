@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/fernandoecumbi/Desktop/IT%20course/Kidney-Disease-Classifciation-Deep-Learning-Project/mlruns/0/7b01c1be76d242a39187de0b16dc60e7/artifacts
+end_time: 1736200250614
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7b01c1be76d242a39187de0b16dc60e7
+run_name: orderly-grouse-120
+run_uuid: 7b01c1be76d242a39187de0b16dc60e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736200198566
+status: 4
+tags: []
+user_id: fernandoecumbi
