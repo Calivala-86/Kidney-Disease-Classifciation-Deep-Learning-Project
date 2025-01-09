@@ -731,3 +731,56 @@ Traceback (most recent call last):
   File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/setuptools/_distutils/file_util.py", line 104, in copy_file
     from distutils._modified import newer
 ModuleNotFoundError: No module named 'distutils._modified'
+[2025-01-09 23:12:16,698: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-01-09 23:12:16,716: INFO: helpers: Accessing as Calivala-86]
+[2025-01-09 23:12:17,686: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/Calivala-86/Kidney-Disease-Classifciation-Deep-Learning-Project-Mlflow-DVC "HTTP/1.1 200 OK"]
+[2025-01-09 23:12:17,960: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-01-09 23:12:17,967: INFO: helpers: Initialized MLflow to track repo "Calivala-86/Kidney-Disease-Classifciation-Deep-Learning-Project-Mlflow-DVC"]
+[2025-01-09 23:12:17,971: INFO: helpers: Repository Calivala-86/Kidney-Disease-Classifciation-Deep-Learning-Project-Mlflow-DVC initialized!]
+[2025-01-09 23:12:29,219: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-01-09 23:12:29,229: INFO: helpers: Accessing as Calivala-86]
+[2025-01-09 23:12:29,509: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/Calivala-86/Kidney-Disease-Classifciation-Deep-Learning-Project-Mlflow-DVC "HTTP/1.1 200 OK"]
+[2025-01-09 23:12:29,973: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-01-09 23:12:29,977: INFO: helpers: Initialized MLflow to track repo "Calivala-86/Kidney-Disease-Classifciation-Deep-Learning-Project-Mlflow-DVC"]
+[2025-01-09 23:12:29,978: INFO: helpers: Repository Calivala-86/Kidney-Disease-Classifciation-Deep-Learning-Project-Mlflow-DVC initialized!]
+[2025-01-09 23:12:29,979: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2025-01-09 23:12:29,983: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-09 23:12:29,990: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-09 23:12:29,993: INFO: common: created directory at: artifacts]
+[2025-01-09 23:12:29,993: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-09 23:12:29,994: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-09 23:12:37,575: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-09 23:12:39,084: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-01-09 23:12:39,087: INFO: main: *******************]
+[2025-01-09 23:12:39,087: INFO: main: >>>>>>> stage Prepare base model started <<<<<<<]
+[2025-01-09 23:12:39,093: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-09 23:12:39,096: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-09 23:12:39,097: INFO: common: created directory at: artifacts]
+[2025-01-09 23:12:39,097: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-01-09 23:12:40,902: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-01-09 23:12:42,058: INFO: main: >>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-01-09 23:12:42,058: INFO: main: *******************]
+[2025-01-09 23:12:42,059: INFO: main: >>>>>>> stage Training started <<<<<<<]
+[2025-01-09 23:12:42,064: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-09 23:12:42,069: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-09 23:12:42,070: INFO: common: created directory at: artifacts]
+[2025-01-09 23:12:42,070: INFO: common: created directory at: artifacts/training]
+[2025-01-09 23:16:11,804: INFO: main: >>>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-01-09 23:16:11,812: INFO: main: *******************]
+[2025-01-09 23:16:11,812: INFO: main: >>>>>>> stage Evaluation stage started <<<<<<<]
+[2025-01-09 23:16:11,833: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-09 23:16:11,846: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-09 23:16:11,856: INFO: common: created directory at: artifacts]
+[2025-01-09 23:17:05,029: INFO: common: json file saved at scores.json]
+[2025-01-09 23:17:05,031: INFO: common: json file saved at scores.json]
+[2025-01-09 23:17:11,277: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-01-09 23:17:12,582: INFO: builder_impl: Assets written to: /var/folders/ks/5nym8j9d5_l_9fp2yb3p9q3c0000gn/T/tmpygk0nl4a/model/data/model/assets]
+[2025-01-09 23:17:59,573: INFO: main: >>>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]

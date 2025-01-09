@@ -8,6 +8,12 @@ import dagshub
 from cnnClassifier.entity.config_entity import EvaluationConfig
 from cnnClassifier.utils.common import save_json
 
+dagshub.init(
+    repo_owner="Calivala-86",
+    repo_name="Kidney-Disease-Classifciation-Deep-Learning-Project-Mlflow-DVC",
+    mlflow=True,
+)
+
 
 class Evaluation:
     def __init__(self, config: EvaluationConfig):
