@@ -21,7 +21,7 @@ stages:
     outs:
      - artifacts/prepare_base_model
 
-  prepare_base_model:
+  model_training:
     cmd: python src/cnnClassifier/pipeline/stage_03_model_training.py
     deps:
       - src/cnnClassifier/pipeline/stage_03_model_training.py
@@ -36,17 +36,3 @@ stages:
       - AUGMENTATION
     outs:
      - artifacts/training/model.h5
-
-  prepare_base_model:
-    cmd: python src/cnnClassifier/pipeline/stage_02_data_prepare_base_model.py
-    deps:
-      - src/cnnClassifier/pipeline/stage_02_data_prepare_base_model.py
-      - config/config.yaml
-    params:
-      - IMAGE_SIZE
-      - INCLUDE_TOP
-      - CLASSES
-      - WEIGHTS
-      - LEARNING_RATE
-    outs:
-     - artifacts/prepare_base_model
