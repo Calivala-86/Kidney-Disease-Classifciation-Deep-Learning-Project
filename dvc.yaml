@@ -24,7 +24,6 @@ stages:
      - artifacts/prepare_base_model
 
 
-
   training:
     cmd: python src/cnnClassifier/pipeline/stage_03_model_training.py
     deps:
@@ -41,10 +40,11 @@ stages:
      - artifacts/training/model.h5
 
 
+
   evaluation:
-    cmd: python python src/cnnClassifier/pipeline/stage_04_evaluation.py
+    cmd: python src/cnnClassifier/pipeline/stage_04_evaluation.py
     deps:
-      - python src/cnnClassifier/pipeline/stage_04_evaluation.py
+      - src/cnnClassifier/pipeline/stage_04_evaluation.py
       - config/config.yaml
       - artifacts/data_ingestion/kidney-ct-scan-image
       - artifacts/training/model.h5

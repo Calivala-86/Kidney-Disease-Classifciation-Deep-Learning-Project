@@ -19,7 +19,14 @@ training:
     trained_model_path: artifacts/training/model.h5
 
 
+evaluation:
+    root_dir: artifacts/evaluation
+    path_of_model: artifacts/training/model.h5
+    training_data: artifacts/data_ingestion/kidney-ct-scan-image
+    mlflow_uri: "https://dagshub.com/Calivala-86/Kidney-Disease-Classifciation-Deep-Learning-Project-Mlflow-DVC.mlflow"
+
+
 prepare_callbacks:
-  root_dir: artifacts/prepare_callbacks
-  tensorboard_root_log_dir: artifacts/prepare_callbacks/tensorboard_log_dir
-  checkpoint_model_filepath: artifacts/prepare_callbacks/checkpoint_dir/model.h5
+    root_dir: artifacts/prepare_callbacks
+    tensorboard_root_log_dir: artifacts/prepare_callbacks/tensorboard_log_dir
+    checkpoint_model_filepath: artifacts/prepare_callbacks/checkpoint_dir/model.h5
