@@ -1,4 +1,4 @@
-from cnnClassifier.config.configuration import ConfiguartionManager
+from cnnClassifier.config.configuration import ConfigurationManager
 from cnnClassifier.components.prepare_base_model import PreparebaseModel
 from src.cnnClassifier import logger
 
@@ -11,7 +11,7 @@ class PrepareBaseModelTrainingPipeline:
         pass
 
     def main(self):
-        config = ConfiguartionManager()
+        config = ConfigurationManager()
         prepare_base_model_config = config.get_prepare_base_model_config()
         prepare_base_model = PreparebaseModel(config=prepare_base_model_config)
         prepare_base_model.get_base_model()
