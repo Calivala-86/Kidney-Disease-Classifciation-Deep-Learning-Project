@@ -1417,3 +1417,118 @@ Traceback (most recent call last):
 OSError: SavedModel file does not exist at: artitacts/training/model.h5/{saved_model.pbtxt|saved_model.pb}
 [2025-01-11 21:27:31,372: INFO: _internal: 127.0.0.1 - - [11/Jan/2025 21:27:31] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
 [2025-01-11 21:28:26,737: INFO: _internal: 127.0.0.1 - - [11/Jan/2025 21:28:26] "GET / HTTP/1.1" 200 -]
+[2025-01-11 21:43:15,208: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.14:8080]
+[2025-01-11 21:43:15,210: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-01-11 21:43:42,625: INFO: _internal: 127.0.0.1 - - [11/Jan/2025 21:43:42] "GET / HTTP/1.1" 200 -]
+[2025-01-11 21:44:20,448: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+  File "/Users/fernandoecumbi/Desktop/IT course/Kidney-Disease-Classifciation-Deep-Learning-Project/src/cnnClassifier/pipeline/prediction.py", line 14, in predict
+    model = load_model(os.path.join("artifacts", "training", "model.h5"))
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/saving/save.py", line 200, in load_model
+    return hdf5_format.load_model_from_hdf5(filepath, custom_objects,
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/saving/hdf5_format.py", line 198, in load_model_from_hdf5
+    model.compile(**saving_utils.compile_args_from_training_config(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/saving/saving_utils.py", line 207, in compile_args_from_training_config
+    optimizer = optimizers.deserialize(optimizer_config)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/optimizers.py", line 94, in deserialize
+    return deserialize_keras_object(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/utils/generic_utils.py", line 659, in deserialize_keras_object
+    (cls, cls_config) = class_and_config_for_serialized_keras_object(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/utils/generic_utils.py", line 556, in class_and_config_for_serialized_keras_object
+    raise ValueError(
+ValueError: Unknown optimizer: Custom>SGD. Please ensure this object is passed to the `custom_objects` argument. See https://www.tensorflow.org/guide/keras/save_and_serialize#registering_the_custom_object for details.
+[2025-01-11 21:44:20,475: INFO: _internal: 127.0.0.1 - - [11/Jan/2025 21:44:20] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-01-11 21:46:50,846: INFO: _internal: 127.0.0.1 - - [11/Jan/2025 21:46:50] "GET / HTTP/1.1" 200 -]
+[2025-01-11 21:59:38,724: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.14:8080]
+[2025-01-11 21:59:38,726: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-01-11 22:00:07,756: INFO: _internal: 127.0.0.1 - - [11/Jan/2025 22:00:07] "GET / HTTP/1.1" 200 -]
+[2025-01-11 22:00:22,465: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+  File "/Users/fernandoecumbi/Desktop/IT course/Kidney-Disease-Classifciation-Deep-Learning-Project/src/cnnClassifier/pipeline/predict.py", line 14, in predict
+    model = load_model(os.path.join("artifacts", "training", "model.h5"))
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/saving/save.py", line 200, in load_model
+    return hdf5_format.load_model_from_hdf5(filepath, custom_objects,
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/saving/hdf5_format.py", line 198, in load_model_from_hdf5
+    model.compile(**saving_utils.compile_args_from_training_config(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/saving/saving_utils.py", line 207, in compile_args_from_training_config
+    optimizer = optimizers.deserialize(optimizer_config)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/optimizers.py", line 94, in deserialize
+    return deserialize_keras_object(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/utils/generic_utils.py", line 659, in deserialize_keras_object
+    (cls, cls_config) = class_and_config_for_serialized_keras_object(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/utils/generic_utils.py", line 556, in class_and_config_for_serialized_keras_object
+    raise ValueError(
+ValueError: Unknown optimizer: Custom>SGD. Please ensure this object is passed to the `custom_objects` argument. See https://www.tensorflow.org/guide/keras/save_and_serialize#registering_the_custom_object for details.
+[2025-01-11 22:00:22,485: INFO: _internal: 127.0.0.1 - - [11/Jan/2025 22:00:22] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-01-11 22:04:54,374: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.14:8080]
+[2025-01-11 22:04:54,375: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-01-11 22:05:05,787: INFO: _internal: 127.0.0.1 - - [11/Jan/2025 22:05:05] "GET / HTTP/1.1" 200 -]
+[2025-01-11 22:05:19,502: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+  File "/Users/fernandoecumbi/Desktop/IT course/Kidney-Disease-Classifciation-Deep-Learning-Project/src/cnnClassifier/pipeline/predict.py", line 14, in predict
+    model = load_model(os.path.join("artifacts", "training", "model.h5"))
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/saving/save.py", line 200, in load_model
+    return hdf5_format.load_model_from_hdf5(filepath, custom_objects,
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/saving/hdf5_format.py", line 198, in load_model_from_hdf5
+    model.compile(**saving_utils.compile_args_from_training_config(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/saving/saving_utils.py", line 207, in compile_args_from_training_config
+    optimizer = optimizers.deserialize(optimizer_config)
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/optimizers.py", line 94, in deserialize
+    return deserialize_keras_object(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/utils/generic_utils.py", line 659, in deserialize_keras_object
+    (cls, cls_config) = class_and_config_for_serialized_keras_object(
+  File "/Applications/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/keras/utils/generic_utils.py", line 556, in class_and_config_for_serialized_keras_object
+    raise ValueError(
+ValueError: Unknown optimizer: Custom>SGD. Please ensure this object is passed to the `custom_objects` argument. See https://www.tensorflow.org/guide/keras/save_and_serialize#registering_the_custom_object for details.
+[2025-01-11 22:05:19,524: INFO: _internal: 127.0.0.1 - - [11/Jan/2025 22:05:19] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
