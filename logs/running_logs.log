@@ -1532,3 +1532,4 @@ Traceback (most recent call last):
     raise ValueError(
 ValueError: Unknown optimizer: Custom>SGD. Please ensure this object is passed to the `custom_objects` argument. See https://www.tensorflow.org/guide/keras/save_and_serialize#registering_the_custom_object for details.
 [2025-01-11 22:05:19,524: INFO: _internal: 127.0.0.1 - - [11/Jan/2025 22:05:19] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-01-11 22:24:41,883: INFO: _internal: 127.0.0.1 - - [11/Jan/2025 22:24:41] "GET / HTTP/1.1" 200 -]

@@ -38,12 +38,26 @@ conda active cnncls
 ### STEP 02- install the requirements
 ```bash
 pip install -r requirements.txt
+
+`
+
+```bash
+# Finally run the following command
+python app.py
 ```
 
+Now,
+```bash
+open up you local host and port
+```
+
+### DVC cmd
+1. dvc init
+2. dvc repro
+3. dvc dag
 
 
-
-
+### MLflow
 
 [Documentation](https://mlflow.org/docs/lastes/index.html)
 
@@ -66,3 +80,19 @@ export MLFLOW_TRACKING_URI=https://dagshub.com/Calivala-86/Kidney-Disease-Classi
 export MLFLOW_TRACKING_USERNAME=Calivala-86
 export MLFLOW_TRACKING_PASSWORD=72b0a74ee983a0ed936d9093985d5810dc7481
 ```
+
+
+
+### About MLflow & DV
+
+```bash
+MLflow
+
+  * Its Production Grade
+  * Trace all of your experiements
+  * Logging & taging your model
+
+DVC
+  * Its very lite weight for POC only
+  * Lite weight experiements tracker
+  * it can perform Orchestration (Creating Pipelines)
